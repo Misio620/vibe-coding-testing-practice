@@ -95,7 +95,7 @@ describe('LoginPage', () => {
             fireEvent.change(passwordInput, { target: { value: '12345678' } });
             fireEvent.click(loginButton);
             await waitFor(() => {
-                expect(screen.getByText('密碼必須包含英文字母，343525和數字')).toBeInTheDocument();
+                expect(screen.getByText('密碼必須包含英文字母和數字')).toBeInTheDocument();
             });
 
             // Case 2: Letters only
