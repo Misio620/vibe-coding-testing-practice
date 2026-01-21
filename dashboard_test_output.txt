@@ -1,0 +1,194 @@
+
+[1m[46m RUN [49m[22m [36mv4.0.16 [39m[90mC:/Users/Misio/Desktop/vibe-coding-testing-practice[39m
+
+ [31m❯[39m src/pages/__tests__/DashboardPage.test.tsx [2m([22m[2m7 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 1328[2mms[22m[39m
+       [32m✓[39m 渲染 Loading 狀態[32m 36[2mms[22m[39m
+       [32m✓[39m 渲染商品列表 (API 成功)[32m 51[2mms[22m[39m
+       [32m✓[39m 渲染錯誤狀態 (一般錯誤)[32m 26[2mms[22m[39m
+       [32m✓[39m Token 過期錯誤 (401)[32m 25[2mms[22m[39m
+       [32m✓[39m 檢查 Header 與 User Info[32m 6[2mms[22m[39m
+[31m       [31m×[31m 檢查 Admin 連結 (Admin Role)[39m[33m 1017[2mms[22m[39m
+       [32m✓[39m 處理登出[32m 162[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/pages/__tests__/DashboardPage.test.tsx[2m:132:9[22m[2m > [22mDashboardPage[2m > [22m前端元素[2m > [22m檢查 Admin 連結 (Admin Role)
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: 管理後台. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"dashboard-page"[39m
+    [36m>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"dashboard-header"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"header-content"[39m
+        [36m>[39m
+          [36m<h1>[39m
+            [0m儀表板[0m
+          [36m</h1>[39m
+          [36m<nav[39m
+            [33mclass[39m=[32m"header-nav"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"nav-link admin-link"[39m
+              [33mdata-discover[39m=[32m"true"[39m
+              [33mhref[39m=[32m"/admin"[39m
+            [36m>[39m
+              [0m🛠️ 管理後台[0m
+            [36m</a>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"logout-button"[39m
+            [36m>[39m
+              [0m登出[0m
+            [36m</button>[39m
+          [36m</nav>[39m
+        [36m</div>[39m
+      [36m</header>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"dashboard-main"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33mclass[39m=[32m"welcome-section"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"welcome-card"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"avatar"[39m
+            [36m>[39m
+              [0mA[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"welcome-text"[39m
+            [36m>[39m
+              [36m<h2>[39m
+                [0mWelcome, [0m
+                [0mAdmin[0m
+                [0m 👋[0m
+              [36m</h2>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"role-badge admin"[39m
+              [36m>[39m
+                [0m管理員[0m
+              [36m</span>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</section>[39m
+        [36m<section[39m
+          [33mclass[39m=[32m"products-section"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0m商品列表[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"products-grid"[39m
+          [36m/>[39m
+        [36m</section>[39m
+      [36m</main>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head />[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"dashboard-page"[39m
+      [36m>[39m
+        [36m<header[39m
+          [33mclass[39m=[32m"dashboard-header"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"header-content"[39m
+          [36m>[39m
+            [36m<h1>[39m
+              [0m儀表板[0m
+            [36m</h1>[39m
+            [36m<nav[39m
+              [33mclass[39m=[32m"header-nav"[39m
+            [36m>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link admin-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/admin"[39m
+              [36m>[39m
+                [0m🛠️ 管理後台[0m
+              [36m</a>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"logout-button"[39m
+              [36m>[39m
+                [0m登出[0m
+              [36m</button>[39m
+            [36m</nav>[39m
+          [36m</div>[39m
+        [36m</header>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"dashboard-main"[39m
+        [36m>[39m
+          [36m<section[39m
+            [33mclass[39m=[32m"welcome-section"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"welcome-card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"avatar"[39m
+              [36m>[39m
+                [0mA[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"welcome-text"[39m
+              [36m>[39m
+                [36m<h2>[39m
+                  [0mWelcome, [0m
+                  [0mAdmin[0m
+                  [0m 👋[0m
+                [36m</h2>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"role-badge admin"[39m
+                [36m>[39m
+                  [0m管理員[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</section>[39m
+          [36m<section[39m
+            [33mclass[39m=[32m"products-section"[39m
+          [36m>[39m
+            [36m<h3>[39m
+              [0m商品列表[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"products-grid"[39m
+            [36m/>[39m
+          [36m</section>[39m
+        [36m</main>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</body>[39m
+[36m</html>[39m
+[90m [2m❯[22m Proxy.waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:[2m163:27[22m[39m
+[36m [2m❯[22m src/pages/__tests__/DashboardPage.test.tsx:[2m136:19[22m[39m
+    [90m134| [39m            [34mrenderDashboardPage[39m({ role[33m:[39m [32m'admin'[39m[33m,[39m username[33m:[39m [32m'Admin'[39m })[33m;[39m
+    [90m135| [39m
+    [90m136| [39m            [35mawait[39m [34mwaitFor[39m(() [33m=>[39m {
+    [90m   | [39m                  [31m^[39m
+    [90m137| [39m                [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'管理後台'[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m138| [39m            })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[90m (7)[39m
+[2m   Start at [22m 17:27:31
+[2m   Duration [22m 3.57s[2m (transform 157ms, setup 495ms, import 386ms, tests 1.33s, environment 1.13s)[22m
+
+[1m[7m[35m HTML [39m[27m[22m [35mReport is generated[39m
+[2m       You can run [22m[1mnpx vite preview --outDir html-report[22m[2m to see the test results.[22m
