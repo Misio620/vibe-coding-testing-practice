@@ -1,0 +1,141 @@
+
+[1m[46m RUN [49m[22m [36mv4.0.16 [39m[90mC:/Users/Misio/Desktop/vibe-coding-testing-practice[39m
+
+ [31m❯[39m src/pages/__tests__/AdminPage.test.tsx [2m([22m[2m4 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 247[2mms[22m[39m
+[31m       [31m×[31m 檢查初始顯示狀態[39m[32m 52[2mms[22m[39m
+       [32m✓[39m 檢查角色Badge顯示 (Admin)[32m 8[2mms[22m[39m
+       [32m✓[39m 檢查角色Badge顯示 (User)[32m 7[2mms[22m[39m
+       [32m✓[39m 處理登出[32m 174[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/pages/__tests__/AdminPage.test.tsx[2m:43:9[22m[2m > [22mAdminPage[2m > [22m前端元素[2m > [22m檢查初始顯示狀態
+[31m[1mTestingLibraryElementError[22m: Unable to find an element with the text: 管理後台. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"admin-page"[31m
+    [36m>[31m
+      [36m<header[31m
+        [33mclass[31m=[32m"dashboard-header"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"header-content"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"header-title"[31m
+          [36m>[31m
+            [36m<a[31m
+              [33mclass[31m=[32m"back-link"[31m
+              [33mdata-discover[31m=[32m"true"[31m
+              [33mhref[31m=[32m"/dashboard"[31m
+            [36m>[31m
+              [0m← 返回[0m
+            [36m</a>[31m
+            [36m<h1>[31m
+              [0m🛠️ 管理後台[0m
+            [36m</h1>[31m
+          [36m</div>[31m
+          [36m<nav[31m
+            [33mclass[31m=[32m"header-nav"[31m
+          [36m>[31m
+            [36m<span[31m
+              [33mclass[31m=[32m"role-badge admin"[31m
+            [36m>[31m
+              [0m管理員[0m
+            [36m</span>[31m
+            [36m<button[31m
+              [33mclass[31m=[32m"logout-button"[31m
+            [36m>[31m
+              [0m登出[0m
+            [36m</button>[31m
+          [36m</nav>[31m
+        [36m</div>[31m
+      [36m</header>[31m
+      [36m<main[31m
+        [33mclass[31m=[32m"admin-main"[31m
+      [36m>[31m
+        [36m<section[31m
+          [33mclass[31m=[32m"admin-section"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"admin-info-card"[31m
+          [36m>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"admin-icon"[31m
+            [36m>[31m
+              [0m🔒[0m
+            [36m</div>[31m
+            [36m<h2>[31m
+              [0m管理員專屬頁面[0m
+            [36m</h2>[31m
+            [36m<div[31m
+              [33mclass[31m=[32m"admin-features"[31m
+            [36m>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"feature-item"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"feature-icon"[31m
+                [36m>[31m
+                  [0m✅[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m只有 admin 角色可以訪問[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"feature-item"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"feature-icon"[31m
+                [36m>[31m
+                  [0m🚫[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0muser 角色會被重定向[0m
+                [36m</span>[31m
+              [36m</div>[31m
+              [36m<div[31m
+                [33mclass[31m=[32m"feature-item"[31m
+              [36m>[31m
+                [36m<span[31m
+                  [33mclass[31m=[32m"feature-icon"[31m
+                [36m>[31m
+                  [0m🔐[0m
+                [36m</span>[31m
+                [36m<span>[31m
+                  [0m受路由守衛保護[0m
+                [36m</span>[31m
+              [36m</div>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</section>[31m
+      [36m</main>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/pages/__tests__/AdminPage.test.tsx:[2m46:27[22m[39m
+    [90m 44| [39m            [34mrenderAdminPage[39m([32m'admin'[39m)[33m;[39m
+    [90m 45| [39m
+    [90m 46| [39m            [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'管理後台'[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m   | [39m                          [31m^[39m
+    [90m 47| [39m            [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'← 返回'[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m 48| [39m            [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'管理員'[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m3 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 17:27:22
+[2m   Duration [22m 2.77s[2m (transform 155ms, setup 570ms, import 458ms, tests 247ms, environment 1.22s)[22m
+
+[1m[7m[35m HTML [39m[27m[22m [35mReport is generated[39m
+[2m       You can run [22m[1mnpx vite preview --outDir html-report[22m[2m to see the test results.[22m
